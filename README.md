@@ -1,12 +1,12 @@
 # rosa
 
-## participantes: 
+## participantes:
 
 * Ana De Dios
 * Isabel Echeguren
 
 
-## colores: 
+## colores:
 
 - Primario: #9567ff
 - Primario claro: #ca96ff
@@ -21,7 +21,7 @@
 - Cuarto: #ffffff
 
 
-## tipografia: 
+## tipografia:
 
 Open Sans - Parrafos peso: 400
 
@@ -34,4 +34,3 @@ Open Sans - Parrafos peso: 400
 Frutiger - Parrafos peso: 700
 
 <link href="https://res.cloudinary.com/dluq8pitu/raw/upload/v1628539013/Rosa/FrutigerLTStd-Black_xlazlr.woff2" crossorigin>
-

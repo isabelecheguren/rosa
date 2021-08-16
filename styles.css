@@ -1,0 +1,22 @@
+/* Design tokens */
+:root {
+  --clr-primario: #9567ff;
+  --clr-primario-claro: #ca96ff;
+  --clr-primario-oscuro:#5f3acb;
+  --clr-secundario: #ff544b;
+  --clr-secundario-claro:#ff8877;
+  --clr-secundario-oscuro:#c51422;
+  --clr-terciario:#000000;
+  --clr-terciario-claro:#ffffff;
+  --ff-titulos: "Open Sans",
+  --ff-body: "monospace",
+  /* https://type-scale.com */
+  --h1: 49px;
+  --h2: 38px;
+  --h3: 31px;
+  --h4: 27px;
+  --h5: 20px;
+  --h6: 16px;
+}
+
+/* Tokens de diseno */

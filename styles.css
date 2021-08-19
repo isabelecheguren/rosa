@@ -8,8 +8,8 @@
   --clr-secundario-oscuro:#c51422;
   --clr-terciario:#000000;
   --clr-terciario-claro:#ffffff;
-  --ff-titulos: "Open Sans",
-  --ff-body: "monospace",
+  --ff-titulos: "Open Sans";
+  --ff-body: "monospace";
   /* https://type-scale.com */
   --h1: 49px;
   --h2: 38px;
@@ -19,4 +19,7 @@
   --h6: 16px;
 }
 
-/* Tokens de diseno */
+/* Base */
+body{
+  background-color: var(--clr-primario);
+}

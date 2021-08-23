@@ -23,3 +23,29 @@
 body{
   background-color: var(--clr-primario);
 }
+
+/* Navegacion */
+.navegacion {}
+.navegacion__logo {}
+.navegacion__button {}
+.navegacion__buscador {}
+
+/* Menu */
+.menu {}
+.menu__item-sub {}
+.menu__item {}
+
+/* Banner */
+.banner {}
+.banner__titulo {}
+.banner__button {}
+.banner__carrusel {}
+
+/* Categorias */
+.categoria {}
+.categoria__button {}
+.categoria__imagen {}
+
+/* Lema */
+.lema {}
+

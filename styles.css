@@ -34,7 +34,8 @@
 
 /* Base */
 body{
-  background-color: var(--clr-primario);
+  background-color: var(--clr-terciario-claro);
+  color: var(--clr-terciario);
    font-family: var(--ff-body);
 }
 

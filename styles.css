@@ -36,10 +36,28 @@ body{
 .menu__item {}
 
 /* Banner */
-.banner {}
-.banner__titulo {}
-.banner__button {}
-.banner__carrusel {}
+.banner {
+  display: flex;
+}
+.banner > * {
+  flex: 1;
+}
+
+.banner__titulo {
+  background: #ca96ff;
+  margin-block: auto;
+}
+.banner__titulo h1 {
+  font-size: 15;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.banner__titulo button {
+  background: #ff544b;
+}
+.banner__carrusel {
+  flex: 2;
+}
 
 /* Categorias */
 .categoria {}
@@ -48,4 +66,3 @@ body{
 
 /* Lema */
 .lema {}
-

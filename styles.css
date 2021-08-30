@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'FrutigerBold';
+  src:  url('./fonts/FrutigerLTStd-Bold\ copy.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'FrutigerLight';
+  src:  url('./fonts/FrutigerLTStd-Light\ copy.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'FrutigerRoman';
+  src:  url('./fonts/FrutigerLTStd-Roman\ copy.woff2') format('woff2');
+}
+
 /* Design tokens */
 :root {
   --clr-primario: #9567ff;
@@ -8,8 +21,8 @@
   --clr-secundario-oscuro:#c51422;
   --clr-terciario:#000000;
   --clr-terciario-claro:#ffffff;
-  --ff-titulos: "Open Sans";
-  --ff-body: "monospace";
+  --ff-titulos: 'FrutigerBold';
+  --ff-body:  'FrutigerRoman';
   /* https://type-scale.com */
   --h1: 49px;
   --h2: 38px;
@@ -22,6 +35,11 @@
 /* Base */
 body{
   background-color: var(--clr-primario);
+   font-family: var(--ff-body);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: var(--ff-titulos);
 }
 
 /* Navegacion */

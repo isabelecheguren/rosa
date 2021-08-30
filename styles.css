@@ -42,7 +42,6 @@ body{
 .banner > * {
   flex: 1;
 }
-
 .banner__titulo {
   background: #ca96ff;
   margin-block: auto;

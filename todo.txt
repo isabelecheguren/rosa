@@ -1,0 +1,9 @@
+/* Mich */
+Hacer un video de como trabajar en la ultima version
+
+/* Isabel */
+Subir las imagenes a cloudinary
+
+/* Ana */
+Version movil prototipo
+Aterrizar la pagina

@@ -1,86 +1,160 @@
+/*** Imports ***/
 @font-face {
   font-family: 'FrutigerBold';
-  src:  url('./fonts/FrutigerLTStd-Bold\ copy.woff2') format('woff2');
+  src: url('./fonts/FrutigerLTStd-Bold.woff2') format('woff2')
 }
 @font-face {
   font-family: 'FrutigerLight';
-  src:  url('./fonts/FrutigerLTStd-Light\ copy.woff2') format('woff2');
+  src: url('./fonts/FrutigerLTStd-Light.woff2') format('woff2')
 }
 @font-face {
   font-family: 'FrutigerRoman';
-  src:  url('./fonts/FrutigerLTStd-Roman\ copy.woff2') format('woff2');
+  src: url('./fonts/FrutigerLTStd-Roman.woff2') format('woff2')
 }
 
-/* Design tokens */
+/*** Design tokens ***/
 :root {
   --clr-primario: #9567ff;
   --clr-primario-claro: #ca96ff;
-  --clr-primario-oscuro:#5f3acb;
+  --clr-primario-oscuro: #5f3acb;
   --clr-secundario: #ff544b;
-  --clr-secundario-claro:#ff8877;
-  --clr-secundario-oscuro:#c51422;
-  --clr-terciario:#000000;
-  --clr-terciario-claro:#ffffff;
+  --clr-secundario-claro: #ff8877;
+  --clr-secundario-oscuro: #c51422;
+  --clr-terciario: #000000;
+  --clr-terciario-claro: #ffffff;
   --ff-titulos: 'FrutigerBold';
-  --ff-body:  'FrutigerRoman';
-  /* https://type-scale.com */
+  --ff-body: 'FrutigerRoman';
   --h1: 49px;
   --h2: 38px;
   --h3: 31px;
   --h4: 27px;
   --h5: 20px;
-  --h6: 16px;
+  --h6: 16px
 }
 
-/* Base */
-body{
+/*** Reset ***/
+html {
+  box-sizing: border-box
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0
+}
+ul,
+ol {
+  list-style: none
+}
+li {
+  padding-inline: 0
+}
+img {
+  max-width: 100%;
+  display: block
+}
+
+/*** Base ***/
+body {
   background-color: var(--clr-terciario-claro);
   color: var(--clr-terciario);
-   font-family: var(--ff-body);
+  font-family: var(--ff-body)
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ff-titulos)
 }
 
-h1,h2,h3,h4,h5 {
-  font-family: var(--ff-titulos);
+/* Typescale */
+h1 {
+  font-size: var(--h1);
 }
 
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+[hidden] {
+  display: none;
+}
+
+/*** Componentes ***/
 /* Navegacion */
-.navegacion {}
-.navegacion__logo {}
-.navegacion__button {}
-.navegacion__buscador {}
+.navegacion {
 
+}
+.navegacion__logo {
+
+}
+.navegacion__button {
+
+}
+.navegacion__buscador {
+
+}
 /* Menu */
-.menu {}
-.menu__item-sub {}
-.menu__item {}
+.menu {
 
+}
+.menu__item-sub {
+
+}
+.menu__item {
+
+}
 /* Banner */
 .banner {
-  display: flex;
+  display: flex
 }
 .banner > * {
-  flex: 1;
+  flex: 1
 }
 .banner__titulo {
   background: #ca96ff;
-  margin-block: auto;
+  margin-block: auto
 }
 .banner__titulo h1 {
   font-size: 15;
   font-weight: 600;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans","Gill Sans MT",Calibri,"Trebuchet MS",sans-serif
 }
 .banner__titulo button {
-  background: #ff544b;
+  background: #ff544b
 }
 .banner__carrusel {
-  flex: 2;
+  flex: 2
 }
-
 /* Categorias */
-.categoria {}
-.categoria__button {}
-.categoria__imagen {}
+.categoria {
 
+}
+.categoria__button {
+
+}
+.categoria__imagen {
+
+}
 /* Lema */
-.lema {}
+.lema {
+
+}

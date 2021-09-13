@@ -124,25 +124,23 @@ h6 {
 }
 /* Banner */
 .banner {
-  display: flex
+  display: flex;
 }
-.banner > * {
-  flex: 1
-}
+
 .banner__titulo {
+  flex: 2;
   background: #ca96ff;
-  margin-block: auto
+  margin-block: auto;
 }
 .banner__titulo h1 {
   font-size: 15;
   font-weight: 600;
-  font-family: "Gill Sans","Gill Sans MT",Calibri,"Trebuchet MS",sans-serif
 }
 .banner__titulo button {
-  background: #ff544b
+  background: #ff544b;
 }
 .banner__carrusel {
-  flex: 2
+  flex: 3;
 }
 /* Categorias */
 .categoria {

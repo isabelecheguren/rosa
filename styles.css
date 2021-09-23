@@ -121,6 +121,7 @@ h6 {
 /* Banner */
 .banner {
   display: flex;
+  gap: 20px;
 }
 
 .banner__titulo {

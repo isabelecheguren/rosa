@@ -135,10 +135,12 @@ h6 {
   font-weight: 600;
 }
 .banner__titulo button {
-  /* background: #ff544b; */
+  background: #ff544b;
   line-height: initial;
   text-transform: uppercase;
   padding: 12px;
+  font-family: var(--h3);
+  color: #ffffff;
 }
 .banner__carrusel {
   flex: 3;

@@ -1,15 +1,15 @@
 /*** Imports ***/
 @font-face {
-  font-family: 'FrutigerBold';
-  src: url('./fonts/FrutigerLTStd-Bold.woff2') format('woff2')
+  font-family: "FrutigerBold";
+  src: url("./fonts/FrutigerLTStd-Bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'FrutigerLight';
-  src: url('./fonts/FrutigerLTStd-Light.woff2') format('woff2')
+  font-family: "FrutigerLight";
+  src: url("./fonts/FrutigerLTStd-Light.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'FrutigerRoman';
-  src: url('./fonts/FrutigerLTStd-Roman.woff2') format('woff2')
+  font-family: "FrutigerRoman";
+  src: url("./fonts/FrutigerLTStd-Roman.woff2") format("woff2");
 }
 
 /*** Design tokens ***/
@@ -22,51 +22,51 @@
   --clr-secundario-oscuro: #c51422;
   --clr-terciario: #000000;
   --clr-terciario-claro: #ffffff;
-  --ff-titulos: 'FrutigerBold';
-  --ff-body: 'FrutigerRoman';
+  --ff-titulos: "FrutigerBold";
+  --ff-body: "FrutigerRoman";
   --h1: 49px;
   --h2: 38px;
   --h3: 31px;
   --h4: 27px;
   --h5: 20px;
-  --h6: 16px
+  --h6: 16px;
 }
 
 /*** Reset ***/
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 ul,
 ol {
-  list-style: none
+  list-style: none;
 }
 li {
-  padding-inline: 0
+  padding-inline: 0;
 }
 img {
   max-width: 100%;
-  display: block
+  display: block;
 }
 
 /*** Base ***/
 body {
   background-color: var(--clr-terciario-claro);
   color: var(--clr-terciario);
-  font-family: var(--ff-body)
+  font-family: var(--ff-body);
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: var(--ff-titulos)
+  font-family: var(--ff-titulos);
 }
 
 /* Typescale */
@@ -104,26 +104,19 @@ h6 {
 /*** Componentes ***/
 /* Navegacion */
 .navegacion {
-
 }
 .navegacion__logo {
-
 }
 .navegacion__button {
-
 }
 .navegacion__buscador {
-
 }
 /* Menu */
 .menu {
-
 }
 .menu__item-sub {
-
 }
 .menu__item {
-
 }
 /* Banner */
 .banner {
@@ -139,25 +132,23 @@ h6 {
 .banner__titulo h1 {
   font-size: 15;
   font-weight: 600;
-
 }
 .banner__titulo button {
   /* background: #ff544b; */
+  line-height: initial;
+  text-transform: uppercase;
+  padding: 12px;
 }
 .banner__carrusel {
   flex: 3;
 }
 /* Categorias */
 .categoria {
-
 }
 .categoria__button {
-
 }
 .categoria__imagen {
-
 }
 /* Lema */
 .lema {
-
 }

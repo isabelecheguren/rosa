@@ -155,3 +155,38 @@ h6 {
 /* Lema */
 .lema {
 }
+
+/*Externos*/
+.externos {
+  background-color: #ff8877;
+  height: 200px;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+}
+.externos__categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.externos__categoria img {
+  margin: auto;
+  opacity: 70%;
+}
+.externos__categoria img:hover {
+  opacity: 1;
+}
+/*.externos__categoria h3 {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 150px;
+  font-size: 15px;
+  font-family: monospace;
+}*/
+.externos__categoria h3 {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}

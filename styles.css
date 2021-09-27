@@ -156,37 +156,39 @@ h6 {
 .lema {
 }
 
-/*Externos*/
 .externos {
-  background-color: #ff8877;
-  height: 200px;
   display: grid;
   grid-auto-flow: column;
   place-content: center;
+  gap: 40px;
+  padding: 2rem;
+
+  /* justify-content: space-around; */
 }
-.externos__categoria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.externos figure {
   position: relative;
+  height: 150px;
+  width: 150px;
 }
-.externos__categoria img {
-  margin: auto;
+.externos img {
+  object-fit: cover;
   opacity: 70%;
+  height: 150px;
+  width: 200px;
 }
-.externos__categoria img:hover {
+.externos figcaption {
+  display: grid;
+  position: absolute;
+  inset: 0;
+  place-content: center;
+  visibility: hidden;
+}
+.externos a:hover figcaption {
+  visibility: visible;
+}
+.externos img:hover {
   opacity: 1;
 }
-/*.externos__categoria h3 {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  top: 150px;
-  font-size: 15px;
-  font-family: monospace;
-}*/
-.externos__categoria h3 {
-  position: absolute;
-  top: 0px;
-  left: 2px;
-}
+.externos h3 {
+  font-family: frutiger;
+  color: #000000;

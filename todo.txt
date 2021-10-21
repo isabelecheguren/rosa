@@ -8,3 +8,16 @@ Subir las imagenes a cloudinary
 /* Ana */
 Version movil prototipo
 Aterrizar la pagina
+
+
+Lista Ana
+Sección Agenda Centro
+Grid Agenda CENTRO
+Botón Agenda CENTRO
+Sección Newsletter
+Grid Newsletter
+Botón Newsletter
+Botón Menú
+Despliegue Menú
+Grid opciones Menú
+Hover en Menú y despliegue de opciones

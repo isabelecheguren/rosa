@@ -8,7 +8,13 @@ Versión movil
     - Ajustar tamaños
     - Sintesis de menú
     - Sintesis de calendario
-    - Sintesis de sección propuestas academicas
+    - Sintesis de sección propuestas academicas 
+    - Sintesis newsletter
+    - Quitar hover y convertir en boton
+    - Ajustar imagenes 
+    
+Hacer carrusel de imagenes  
+
     
 
 

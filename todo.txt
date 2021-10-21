@@ -3,21 +3,15 @@ Hacer un video de como trabajar en la ultima version ✅
 https://app.tango.us/app/workflow/44e4709a-449d-463b-ad75-556341440ba0
 
 /* Isabel */
-Subir las imagenes a cloudinary
+Versión movil 
+    - Desarrollar base 
+    - Ajustar tamaños
+    - Sintesis de menú
+    - Sintesis de calendario
+    - Sintesis de sección propuestas academicas
+    
+
 
 /* Ana */
 Version movil prototipo
 Aterrizar la pagina
-
-
-Lista Ana
-Sección Agenda Centro
-Grid Agenda CENTRO
-Botón Agenda CENTRO
-Sección Newsletter
-Grid Newsletter
-Botón Newsletter
-Botón Menú
-Despliegue Menú
-Grid opciones Menú
-Hover en Menú y despliegue de opciones

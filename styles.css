@@ -192,3 +192,22 @@ h6 {
 .externos h3 {
   font-family: frutiger;
   color: #000000;
+}
+.ayn{
+  display: flex;
+  justify-content: center;
+  gap: 100px; 
+}
+.agenda{
+
+}
+.agenda-titulo{
+
+}
+.neewsletter{
+  
+}
+.newsletter-titulo{
+
+}
+

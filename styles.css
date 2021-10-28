@@ -211,3 +211,18 @@ h6 {
 
 }
 
+.carrusel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carrusel figure {
+  position: absolute;
+  transition: all 0.4s ease-out;
+}
+
+.carrusel figure img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}

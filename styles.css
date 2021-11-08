@@ -230,3 +230,7 @@ h6 {
 .section-calendario-ayn{
   display: flex;
 }
+
+.section-calendario-ayn > *{
+  flex: 1;
+}

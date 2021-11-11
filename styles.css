@@ -211,7 +211,7 @@ h6 {
 
 }
 
-.carrusel {
+/* .carrusel {
   position: relative;
   overflow: hidden;
 }
@@ -225,7 +225,45 @@ h6 {
   display: block;
   height: auto;
   max-width: 100%;
+} */
+
+.carrusel {
+ background: url("https://res.cloudinary.com/centro/image/upload/v1631559938/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_pwbno8.jpg"); 
+ width: 1110px;
+ height: 624px; 
+ overflow: hidden;
+
+ animation: slider 7s linear infinite;
 }
+@keyframes slider {
+  0% {
+    background: url("https://res.cloudinary.com/centro/image/upload/v1631559938/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_pwbno8.jpg"); 
+  }
+  20% {
+    background: url("https://fakeimg.pl/800x400/FFA000/FFA000");
+  }
+  25% {
+    background: url("https://fakeimg.pl/800x400/3F51B5/3F51B5");
+  }
+  45% {
+    background: url("https://fakeimg.pl/800x400/AA00FF/AA00FF");
+  }
+  50% {
+    background: url("https://fakeimg.pl/800x400/D1D5DB/D1D5DB");
+  }
+  70% {
+    background: url("https://fakeimg.pl/800x400/FFA000/FFA000");
+  }
+  75% {
+    background: url("https://fakeimg.pl/800x400/512DA8/512DA8");
+  }
+  100% {
+    background: url("https://fakeimg.pl/800x400/D1D5DB/D1D5DB");
+  }
+}
+ 
+
+
 
 .section-calendario-ayn{
   display: flex;
@@ -234,3 +272,4 @@ h6 {
 .section-calendario-ayn > *{
   flex: 1;
 }
+

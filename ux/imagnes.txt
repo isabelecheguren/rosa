@@ -26,3 +26,7 @@ https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Ro
 
 https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/bethany-legg-75nbwHfDsnY-unsplash_l8rbmg.jpg
 
+/* Imagen de calendario */
+
+https://res.cloudinary.com/centro/image/upload/v1637257680/Medios%20Digitales-Rosa/Calendario_IMG_utybty.jpg
+

@@ -233,7 +233,7 @@ h6 {
  height: 624px; 
  overflow: hidden;
 
- animation: slider 7s linear infinite;
+ animation: slider 21s linear infinite;
 }
 @keyframes slider {
   0% {

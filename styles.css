@@ -187,9 +187,7 @@ h7 {
   place-content: center;
   gap: 20px;
   padding: 2rem;
-  
-
-  /* justify-content: space-around; */
+  justify-content: space-around; 
 }
 .externos h4{
 color:#000000; 

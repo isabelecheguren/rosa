@@ -26,10 +26,11 @@
   --ff-body: "FrutigerRoman";
   --h1: 49px;
   --h2: 38px;
-  --h3: 31px;
+  --h3: 24px;
   --h4: 27px;
   --h5: 20px;
   --h6: 16px;
+  --h7: 13px;
 }
 
 /*** Reset ***/
@@ -53,6 +54,7 @@ li {
 img {
   max-width: 100%;
   display: block;
+  justify-content: space-around;
 }
 
 /*** Base ***/
@@ -63,7 +65,8 @@ body {
 }
 h1,
 h2,
-h3,
+h3 {
+  font-family: var("FrutigerRoman"); }
 h4,
 h5 {
   font-family: var(--ff-titulos);
@@ -79,22 +82,41 @@ h1 {
 
 h2 {
   font-size: var(--h2);
+ text-align: left;
+  padding-top: 30px;
 }
 
 h3 {
   font-size: var(--h3);
+  font-family: "FrutigerLight";
 }
 
 h4 {
   font-size: var(--h4);
+  font-family: "FrutigerBold";
+  margin-top: 15px;
 }
 
 h5 {
   font-size: var(--h5);
+  margin: 5px;
+}
+
+
 }
 
 h6 {
   font-size: var(--h6);
+  font-family: "FrutigerLight";
+  padding: 10px;
+  text-align: center;
+}
+
+h7 {
+  font-size: var(--h7);
+  font-family: "FrutigerLight";
+  color:#ffffff;
+  text-align: center;
 }
 
 [hidden] {
@@ -145,6 +167,9 @@ h6 {
 .banner__carrusel {
   flex: 3;
 }
+.slogan h2{
+  text-align: center;
+}
 /* Categorias */
 .categoria {
 }
@@ -160,21 +185,23 @@ h6 {
   display: grid;
   grid-auto-flow: column;
   place-content: center;
-  gap: 40px;
+  gap: 20px;
   padding: 2rem;
+  
 
   /* justify-content: space-around; */
 }
+.externos h4{
+color:#000000; 
+}
 .externos figure {
   position: relative;
-  height: 150px;
-  width: 150px;
 }
 .externos img {
   object-fit: cover;
   opacity: 70%;
-  height: 150px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 .externos figcaption {
   display: grid;
@@ -198,16 +225,21 @@ h6 {
   justify-content: center;
   gap: 100px;
 }
-.agenda{
-
+.calendario h6{
+  font-family: "FrutigerLight";
+   font-size: var(--h6);
+   padding: 10px;
+   text-align: center;
 }
-.agenda-titulo{
 
+.Calendario-titulo{
+margin-left: 15px;
 }
-.neewsletter{
-
+.newsletter h4{
+color:#ff8877; 
 }
 .newsletter-titulo{
+    margin-top: -94px;
 
 }
 
@@ -315,6 +347,14 @@ h6 {
 .fecha:nth-child(5) {
   grid-column: 2 /3;
   grid-row: 3 /5;
+}
+
+.footer {
+    background-color: #9567ff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
 }
 /*
 .section-calendario-ayn{

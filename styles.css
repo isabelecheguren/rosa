@@ -409,6 +409,9 @@ max-width: 100%;
       font-family: var(--h3);
       color: #ffffff;
   }
+  .slogan h2 {
+    font-size: 20px;
+  }
 
   .externos {
       display: grid;
@@ -455,5 +458,6 @@ max-width: 100%;
   .newsletter-titulo {
       margin-top: 0;
   }
+
 }
 

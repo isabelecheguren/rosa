@@ -3,10 +3,12 @@
   font-family: "FrutigerBold";
   src: url("./fonts/FrutigerLTStd-Bold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "FrutigerLight";
   src: url("./fonts/FrutigerLTStd-Light.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "FrutigerRoman";
   src: url("./fonts/FrutigerLTStd-Roman.woff2") format("woff2");
@@ -37,20 +39,20 @@
 html {
   box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
+
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
-ul,
-ol {
+
+ul, ol {
   list-style: none;
 }
+
 li {
-  padding-inline: 0;
-}
+  padding-inline: 0; }
+
 img {
   max-width: 100%;
   display: block;
@@ -63,12 +65,12 @@ body {
   color: var(--clr-terciario);
   font-family: var(--ff-body);
 }
-h1,
-h2,
-h3 {
-  font-family: var("FrutigerRoman"); }
-h4,
-h5 {
+
+h1, h2, h3 {
+  font-family: var("FrutigerRoman");
+}
+
+h4, h5 {
   font-family: var(--ff-titulos);
 }
 
@@ -82,7 +84,7 @@ h1 {
 
 h2 {
   font-size: var(--h2);
- text-align: left;
+  text-align: left;
   padding-top: 30px;
 }
 
@@ -101,8 +103,6 @@ h5 {
   font-size: var(--h5);
   margin: 5px;
 }
-
-
 }
 
 h6 {
@@ -115,7 +115,7 @@ h6 {
 h7 {
   font-size: var(--h7);
   font-family: "FrutigerLight";
-  color:#ffffff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -127,19 +127,26 @@ h7 {
 /* Navegacion */
 .navegacion {
 }
+
 .navegacion__logo {
 }
+
 .navegacion__button {
 }
+
 .navegacion__buscador {
 }
+
 /* Menu */
 .menu {
 }
+
 .menu__item-sub {
 }
+
 .menu__item {
 }
+
 /* Banner */
 .banner {
   display: flex;
@@ -149,13 +156,14 @@ h7 {
 .banner__titulo {
   flex: 2;
   /* background: #ca96ff; */
-  margin-block: auto;
-  text-align: center;
+  margin-block: auto; text-align: center;
 }
+
 .banner__titulo h1 {
   font-size: 15;
   font-weight: 600;
 }
+
 .banner__titulo button {
   background: #ff544b;
   line-height: initial;
@@ -164,19 +172,25 @@ h7 {
   font-family: var(--h3);
   color: #ffffff;
 }
+
 .banner__carrusel {
   flex: 3;
 }
-.slogan h2{
+
+.slogan h2 {
   text-align: center;
 }
+
 /* Categorias */
 .categoria {
 }
+
 .categoria__button {
 }
+
 .categoria__imagen {
 }
+
 /* Lema */
 .lema {
 }
@@ -187,20 +201,24 @@ h7 {
   place-content: center;
   gap: 20px;
   padding: 2rem;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
 }
-.externos h4{
-color:#000000; 
+
+.externos h4 {
+  color: #000000;
 }
+
 .externos figure {
   position: relative;
 }
+
 .externos img {
   object-fit: cover;
   opacity: 70%;
   height: 300px;
   width: 300px;
 }
+
 .externos figcaption {
   display: grid;
   position: absolute;
@@ -208,87 +226,99 @@ color:#000000;
   place-content: center;
   visibility: hidden;
 }
+
 .externos a:hover figcaption {
   visibility: visible;
 }
+
 .externos img:hover {
   opacity: 1;
 }
+
 .externos h3 {
   font-family: frutiger;
   color: #000000;
 }
-.ayn{
+
+.ayn {
   display: flex;
   justify-content: center;
   gap: 100px;
 }
-.calendario h6{
+
+.calendario h6 {
   font-family: "FrutigerLight";
-   font-size: var(--h6);
-   padding: 10px;
-   text-align: center;
+  font-size: var(--h6);
+  padding: 10px;
+  text-align: center;
 }
 
-.Calendario-titulo{
-margin-left: 15px;
+.Calendario-titulo {
+  margin-left: 15px;
 }
-.newsletter h4{
-color:#ff8877; 
-}
-.newsletter-titulo{
-    margin-top: -94px;
 
+.newsletter h4 {
+  color: #ff8877;
+}
+
+.newsletter-titulo {
+  margin-top: -94px;
 }
 
 /* .carrusel {
-  position: relative;
-  overflow: hidden;
+position: relative;
+overflow: hidden;
 }
 
 .carrusel figure {
-  position: absolute;
-  transition: all 0.4s ease-out;
+position: absolute;
+transition: all 0.4s ease-out;
 }
 
 .carrusel figure img {
-  display: block;
-  height: auto;
-  max-width: 100%;
+display: block;
+height: auto;
+max-width: 100%;
 } */
-
 .carrusel {
- background: url("https://res.cloudinary.com/centro/image/upload/v1631559938/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_pwbno8.jpg");
- width: 1110px;
- height: 624px;
- overflow: hidden;
-
- animation: slider 21s linear infinite;
+  background: url("https://res.cloudinary.com/centro/image/upload/v1631559938/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_pwbno8.jpg");
+  width: 1110px;
+  height: 624px;
+  overflow: hidden;
+  animation: slider 21s linear infinite;
 }
+
 @keyframes slider {
   0% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_ooi56n.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_ooi56n.jpg");
   }
+
   20% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/hugo-rocha-qFpnvZ_j9HU-unsplash_tsyhnl.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/hugo-rocha-qFpnvZ_j9HU-unsplash_tsyhnl.jpg");
   }
+
   25% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/bethany-legg-75nbwHfDsnY-unsplash_l8rbmg.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/bethany-legg-75nbwHfDsnY-unsplash_l8rbmg.jpg");
   }
+
   45% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/sam-balye-w1FwDvIreZU-unsplash-2_qxo2w2.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/sam-balye-w1FwDvIreZU-unsplash-2_qxo2w2.jpg");
   }
+
   50% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/tirza-van-dijk-o1SKqmgSDbg-unsplash_via3vw.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/tirza-van-dijk-o1SKqmgSDbg-unsplash_via3vw.jpg");
   }
+
   70% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/ux-indonesia-qC2n6RQU4Vw-unsplash_wzk0gt.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/ux-indonesia-qC2n6RQU4Vw-unsplash_wzk0gt.jpg");
   }
+
   75% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_ooi56n.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249011/Medios%20Digitales-Rosa/alexis-brown--Xv7k95vOFA-unsplash_ooi56n.jpg");
   }
+
   100% {
-    background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/sam-balye-w1FwDvIreZU-unsplash-2_qxo2w2.jpg");
+      background: url("https://res.cloudinary.com/centro/image/upload/v1637249012/Medios%20Digitales-Rosa/sam-balye-w1FwDvIreZU-unsplash-2_qxo2w2.jpg");
   }
 }
 
@@ -299,10 +329,8 @@ color:#ff8877;
   padding: 20px;
 }
 
-
 .calendario {
-  padding-inline: 20px;
-  display: grid;
+  padding-inline: 20px; display: grid;
   overflow: hidden;
   background-image: url("https://res.cloudinary.com/pmichventura/image/upload/v1637257754/CENTRO/calendario_cxwx9a.jpg");
   background-size: cover;
@@ -317,10 +345,10 @@ color:#ff8877;
 }
 
 .fecha {
-   border: 1px solid black;
-   display: grid;
-   place-items: center;
-   overflow: hidden;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 .fecha img {
@@ -330,35 +358,102 @@ color:#ff8877;
 .fecha:nth-child(1) {
   /* border: 1px solid black; */
 }
+
 .fecha:nth-child(2) {
   grid-column: 2 / 3;
   grid-row: 1 /3;
 }
+
 .fecha:nth-child(3) {
   grid-column: 1 / 2;
   grid-row: 2 /3;
 }
+
 .fecha:nth-child(4) {
   grid-column: 1 / 2;
   grid-row: 3 / 5;
 }
+
 .fecha:nth-child(5) {
   grid-column: 2 /3;
   grid-row: 3 /5;
 }
 
 .footer {
-    background-color: #9567ff;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+  background-color: #9567ff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
-}
-/*
-.section-calendario-ayn{
-  display: flex;
-} */
 
-/* .section-calendario-ayn > *{
-  flex: 1;
-} */
+@media screen and (max-width: 600px) {
+  .banner {
+      display: block;
+      gap: 20px;
+  }
+
+  .banner__titulo {
+      margin-block: 40px; text-align: none;
+  }
+
+  .banner__titulo h1 {
+      font-size: 15;
+      font-weight: 600;
+  }
+
+  .banner__titulo button {
+      background: #ff544b;
+      line-height: initial;
+      text-transform: uppercase;
+      padding: 12px;
+      font-family: var(--h3);
+      color: #ffffff;
+  }
+
+  .externos {
+      display: grid;
+      grid-auto-flow: revert;
+      place-content: center;
+      gap: 20px;
+      padding: 2rem;
+      justify-content: space-evenly;
+  }
+
+  .info {
+      display: grid;
+      grid-auto-flow: revert;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .calendario {
+      padding-inline: 0px; display: grid;
+      overflow: hidden;
+      background-image: url("https://res.cloudinary.com/pmichventura/image/upload/v1637257754/CENTRO/calendario_cxwx9a.jpg");
+      background-size: cover;
+      width: auto;
+      height: auto;
+      transform: translate(0);
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto auto;
+      grid-row-gap: 8px;
+      grid-column-gap: 8px;
+      place-content: center;
+  }
+
+  .calendario h4, h5, h6 {
+      font-size: 16px;
+  }
+
+  .fecha {
+      border: 1px solid black;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+  }
+
+  .newsletter-titulo {
+      margin-top: 0;
+  }
+}
+

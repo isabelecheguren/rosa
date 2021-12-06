@@ -8,40 +8,45 @@
   <title>Centro</title>
   <!-- <link rel="stylesheet" href="carrusel.css"> -->
   <link rel="stylesheet" href="styles.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
   <img src="https://picsum.photos/100" alt="Logo centro">
 
-  <button>
-    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15">
-      <path d="M 1 1 L 22 1" fill="transparent" stroke="currentColor"></path>
-      <path d="M 1 13 L 22 13" fill="transparent" stroke="currentColor"></path>
-      <path d="M 1 7 L 22 7" fill="transparent" stroke="currentColor"></path>
-    </svg>
-    <ul hidden>
-      <li>Aspirantes
-        <ul>
-          <li>Institucion </li>
-          <li>Oferta academica</li>
-          <li>Educacion continua</li>
-          <li>Colaboraciones</li>
-        </ul>
-      </li>
-      <li>Estudiantes
-        <ul>
-          <li>Vida estudiantil</li>
-          <li>Mediateca</li>
-          <li>PORTAL CENTRO</li>
-          <li>Extras</li>
-        </ul>
-      </li>
-      <li>Egresados</li>
-      <li>Estudiantes internacionales</li>
-    </ul>
-  </button>
+  <div x-data="{ open: false }">
+    <button @click="open = ! open">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15">
+        <path d="M 1 1 L 22 1" fill="transparent" stroke="currentColor"></path>
+        <path d="M 1 13 L 22 13" fill="transparent" stroke="currentColor"></path>
+        <path d="M 1 7 L 22 7" fill="transparent" stroke="currentColor"></path>
+      </svg>
+    </button>
 
-  <input> <!-- svg buscador --> </input>
+    <div x-show="open" @click.outside="open = false">
+      <ul>
+        <li>Aspirantes
+          <ul>
+            <li>Institucion </li>
+            <li>Oferta academica</li>
+            <li>Educacion continua</li>
+            <li>Colaboraciones</li>
+          </ul>
+        </li>
+        <li>Estudiantes
+          <ul>
+            <li>Vida estudiantil</li>
+            <li>Mediateca</li>
+            <li>PORTAL CENTRO</li>
+            <li>Extras</li>
+          </ul>
+        </li>
+        <li>Egresados</li>
+        <li>Estudiantes internacionales</li>
+      </ul>
+    </div>
+  </div>
+
   <section class="banner">
     <div class="banner__titulo">
       <h1>
@@ -50,16 +55,16 @@
       <button>Click aquí</button>
     </div>
 
-    
+
 
     <div class="carrusel">
 
     </div>
   </section>
 
-<div class="slogan">
-  <h2>CENTRO - es una institución de educación superior dedicada a la profesionalización de la creatividad</h2>
-    </div>
+  <div class="slogan">
+    <h2>CENTRO - es una institución de educación superior dedicada a la profesionalización de la creatividad</h2>
+  </div>
 
 
   <div class="externos">
@@ -107,47 +112,66 @@
     </section>
   </div>
 
-      <h2 class="Calendario-titulo">Calendario</h2>
+  <h2 class="Calendario-titulo">Calendario</h2>
   <section class="info">
     <div class="calendario">
-      <div class="fecha"><h4>3 nov</h4> <h5>6:00pm - Conferencia</h5>
+      <div class="fecha">
+        <h4>3 nov</h4>
+        <h5>6:00pm - Conferencia</h5>
         <h6>Construir el drama: desde la tragedia griega hasta el teatro inmersivo<h6>
 
-        <!-- <img src="https://placeimg.com/640/480/any" alt=""> -->
+            <!-- <img src="https://placeimg.com/640/480/any" alt=""> -->
       </div>
-      <div class="fecha"><h4>5 nov</h4> <h5>10:00am - Yoga y meditación</h5>
-        <h6>Disfruta de una mañana relajante para estar listo para tus entregas finales, consulta el link en tu correo CENTRO.<h6>
-          <h5>4:30pm - Intraducibles, arte urbano</h5>
-        <h6>Acude al panel inaugural La intangible relación entre la palabra y la imagen, con la participación de Regina Olivares.<h6>
-        </div>
-      <div class="fecha"><h4>11 nov</h4> <h5>6:00pm - Conferencia</h5>
-     </div>
-      <div class="fecha"><h4>19 nov</h4> <h5>10:00am - Conferencia</h5>
-        <h6>Independencia financiera: aprende a manejar tus finanzas personales en este taller impartido por la egresazda de la especialidad Diseño del mañana y profesora de STEAM Lab: Lourdes Serrano.<h6>
+      <div class="fecha">
+        <h4>5 nov</h4>
+        <h5>10:00am - Yoga y meditación</h5>
+        <h6>Disfruta de una mañana relajante para estar listo para tus entregas finales, consulta el link en tu correo
+          CENTRO.<h6>
+            <h5>4:30pm - Intraducibles, arte urbano</h5>
+            <h6>Acude al panel inaugural La intangible relación entre la palabra y la imagen, con la participación de
+              Regina Olivares.<h6>
       </div>
-      <div class="fecha"><h4>30 nov</h4> <h5>11:00am - Graduaciones Licenciatura</h5>
-        <h6>Se llevará a cabo la ceremonia de graduación de las Licenciaturas en Cine y Televisión y Comunicación Visual en el auditorio y el piso 8. <h6>
-          <h5>6:00pm - Graduaciones Posgrados</h5>
-        <h6>Se llevará a cabo la ceremonia de graduación de los Posgrados en Gerencia de Proyectos de Arquitectura de Interiores y Diseño del Mañana en el auditorio y piso 8. <h6>
-        </div>
+      <div class="fecha">
+        <h4>11 nov</h4>
+        <h5>6:00pm - Conferencia</h5>
+      </div>
+      <div class="fecha">
+        <h4>19 nov</h4>
+        <h5>10:00am - Conferencia</h5>
+        <h6>Independencia financiera: aprende a manejar tus finanzas personales en este taller impartido por la
+          egresazda de la especialidad Diseño del mañana y profesora de STEAM Lab: Lourdes Serrano.<h6>
+      </div>
+      <div class="fecha">
+        <h4>30 nov</h4>
+        <h5>11:00am - Graduaciones Licenciatura</h5>
+        <h6>Se llevará a cabo la ceremonia de graduación de las Licenciaturas en Cine y Televisión y Comunicación Visual
+          en el auditorio y el piso 8. <h6>
+            <h5>6:00pm - Graduaciones Posgrados</h5>
+            <h6>Se llevará a cabo la ceremonia de graduación de los Posgrados en Gerencia de Proyectos de Arquitectura
+              de Interiores y Diseño del Mañana en el auditorio y piso 8. <h6>
+      </div>
     </div>
     <div class="newsletter">
       <h2 class="newsletter-titulo">Newsletter</h2>
       <article>
         <h4>Vivas nos queremos</h4>
-        <p>Marisol Cuadras, de 18 años, asistió a la protesta del 25-N contra la violencia de género en el municipio de Guaymas, Sonora. Pero...</p>
+        <p>Marisol Cuadras, de 18 años, asistió a la protesta del 25-N contra la violencia de género en el municipio de
+          Guaymas, Sonora. Pero...</p>
       </article>
       <article>
         <h4>El mundo de la moda está de luto</h4>
-        <p>Virgil Abloh, el director artístico de a dirección masculina de Louis Vuitton, falleció a los 41 años de edad. Abloh, quien...</p>
+        <p>Virgil Abloh, el director artístico de a dirección masculina de Louis Vuitton, falleció a los 41 años de
+          edad. Abloh, quien...</p>
       </article>
       <article>
         <h4>Cama loca</h4>
-        <p>Perú, Ecuador y Colombia despertaron ayer con cama loca, pues sintieron la misma sacudida ocasionada por un terremoto de 7.5 grados...</p>
+        <p>Perú, Ecuador y Colombia despertaron ayer con cama loca, pues sintieron la misma sacudida ocasionada por un
+          terremoto de 7.5 grados...</p>
       </article>
       <article>
         <h4>¿Dónde nació ómicron?</h4>
-        <p>Como los países ricos apañaron la mayoría de las vacunas y no le dejaron casi nada a África, ómicron, la nueva variante de COVID-19, fue detectada por primera vez el 22 de noviembre en Sudáfrica...</p>
+        <p>Como los países ricos apañaron la mayoría de las vacunas y no le dejaron casi nada a África, ómicron, la
+          nueva variante de COVID-19, fue detectada por primera vez el 22 de noviembre en Sudáfrica...</p>
       </article>
     </div>
   </section>
@@ -155,8 +179,8 @@
   <section>
     <div class="footer">
       <h7>CENTRO 2021 | Aviso de privacidad | Términos y condiciones | Aviso legal | Santander</h7>
-       </div>
-    </section>
+    </div>
+  </section>
 
 
 </body>
